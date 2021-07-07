@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="TIA_AutomaticSaveProgram.exe" version="1.0.0.0" publicKeyToken="fd8fdedfc57c6b84" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="TIA_AutomaticSaveProgram" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="TIA_AutomaticSaveProgram.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC-Manifestoptionen
+          Wenn Sie die Zugangsebene für das Windows-Benutzerkonto ändern möchten, ersetzen Sie den 
+          requestedExecutionLevel-Knoten durch eines der folgenden Elemente.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Löschen Sie den requestedExecutionLevel-Knoten, wenn Sie 
+         zum Gewährleisten der Abwärtskompatibilität die Datei- und Registrierungsvirtualisierung verwenden möchten.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Siemens.Engineering.dll" size="1894912">
+      <assemblyIdentity name="Siemens.Engineering" version="16.0.0.0" publicKeyToken="D29EC89BAC048F84" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6srnZglpwv2u4ACUjArH2XaSZufSz4Xr+pbCD0HBMmM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Siemens.Engineering.Hmi.dll" size="17592">
+      <assemblyIdentity name="Siemens.Engineering.Hmi" version="16.0.0.0" publicKeyToken="D29EC89BAC048F84" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HbvdfVqagGRSvGURpZNW92z0Iba2UUQU5VWkp4amKLg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TIA_AutomaticSaveProgram.exe" size="6112">
+      <assemblyIdentity name="TIA_AutomaticSaveProgram" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kcz3Wo/nroDrOw8tpzlhIPrkS4nrLdnbHqqVd2THYUQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="TIA_AutomaticSaveProgram.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eSEJjkfolEEv39DK/g+IzGhJd0CZjqwXxowAEpBp2AM=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=ROSENDAHL\Haubenhofer" issuerKeyHash="8d9c9f773a8a14cdcad7ccf98a86d49aef48e7c9" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>OaZzEX2Ee8zUGUmp+Ktiyoa742V7V0wPVsmr2fuyNeA=</DigestValue></Reference></SignedInfo><SignatureValue>Adukb9ikmYGRGO65RnrfJaqmw1b8zC9tsVUSbtdXr8nFZ9p19VNBSmw2/+n36JtxDP3/PllPPhanqVsxG5wdusWJu0ihs4s4Mylwmzy2DIuoJTmsTBTlFchVM2uuRgtaif9Kzpe69z5zXWM+5W6KNUC0LUzuwc9QqoVL+sD1CTo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>voZvC4A+zCmX3sVoWtm2UpN73R6QnLf40iqjpUAZxJNE+OGITSQj+EbwLjcvzOt9gm7llzIfEEXj2GqXLaj8YwZaamH+G35SsNotM47XRpN05h1KTwm7vvt9LPl78+A8Z2/MhflApYWnCrJbSrbs8WkRbXMUMTBpcJgEduz/c2E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e035b2fbd9abc9560f4c577b65e3bb86ca62abf8a94919d4cc7b847d1173a639" Description="" Url=""><as:assemblyIdentity name="TIA_AutomaticSaveProgram.exe" version="1.0.0.0" publicKeyToken="fd8fdedfc57c6b84" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ROSENDAHL\Haubenhofer</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>7L/iUS+i58n4S/g3IIjXoC773/Z2OAVrjhDgNz08dYQ=</DigestValue></Reference></SignedInfo><SignatureValue>ZLdLYcl4bjlJGnOtFGlof9gO35omvpt7bTJN8XZBNncgJ3Hw7zLf/1q4aMNHhoX6xsdiNxGbvFfXRDqKLgaOW8xPL5ujXadyX6bR5D0/qSKoxDZt7DUkdD094/Ee22WxMvgWrhw+r00Fh8x6+KZrcbb59stgXM/+BkOqMq62jx8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>voZvC4A+zCmX3sVoWtm2UpN73R6QnLf40iqjpUAZxJNE+OGITSQj+EbwLjcvzOt9gm7llzIfEEXj2GqXLaj8YwZaamH+G35SsNotM47XRpN05h1KTwm7vvt9LPl78+A8Z2/MhflApYWnCrJbSrbs8WkRbXMUMTBpcJgEduz/c2E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQTDweCEU3RphE6dtcQ+5AQjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioAUgBPAFMARQBOAEQAQQBIAEwAXABIAGEAdQBiAGUAbgBoAG8AZgBlAHIwHhcNMjEwNDIzMDYyNTEyWhcNMjIwNDIzMTIyNTEyWjA1MTMwMQYDVQQDHioAUgBPAFMARQBOAEQAQQBIAEwAXABIAGEAdQBiAGUAbgBoAG8AZgBlAHIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAL6GbwuAPswpl97FaFrZtlKTe90ekJy3+NIqo6VAGcSTRPjhiE0kI/hG8C43L8zrfYJu5ZcyHxBF49hqly2o/GMGWmph/ht+UrDaLTOO10aTdOYdSk8Ju777fSz5e/PgPGdvzIX5QKWFpwqyW0q27PFpEW1zFDEwaXCYBHbs/3NhAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAPhNfS828wTaKBCcE7vrrnW6PUEZrbPizFKNeGqXvbM00GZMIuUOj+cDFobmpwr6jvVB+xp6/lEcYPDOlBE3ytfSvSwp/Gv6+Iz6HrkWEafwuQsWHY2EehXSqfYYAKYl7dn6xfhbvNATo3tSJ1Me9GJmwAD4rL5fEznT8EvW7BdI=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
